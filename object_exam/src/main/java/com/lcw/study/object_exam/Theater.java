@@ -20,7 +20,7 @@ public class Theater {
             audience.getBag().minusAmount(ticket.getFee()); //관람객 가방에서 티켓금액 차감
             ticketSeller.getTicketOffice().plusAmount(ticket.getFee()); //매표소 금액 증가
             audience.getBag().setTicket(ticket); //구매한 티켓을 관람객의 가방에 넣어준다
-        }*/
+        }*/  //chapter1_1
         ticketSeller.sellTo(audience);
     }
 }
