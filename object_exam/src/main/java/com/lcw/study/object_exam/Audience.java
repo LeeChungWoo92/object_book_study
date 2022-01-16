@@ -15,14 +15,15 @@ public class Audience {
     }*/
 
     public Long buy(Ticket ticket) {
-        if (bag.hasInviation()) {
+     /*   if (bag.hasInviation()) { //chapter1_3
             bag.setTicket(ticket);
             return 0L;
         } else {
             bag.setTicket(ticket);
             bag.minusAmount(ticket.getFee());
             return ticket.getFee();
-        }
+        }*/
+        return bag.hold(ticket);
 
     }
 }
