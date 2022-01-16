@@ -11,7 +11,7 @@ public class Theater {
     }
 
     public void enter(Audience audience) { //관람객 맞이
-        if (audience.getBag().hasInviation()) { //가방안에 초대장이 들어있는지 확인(초대장이 있다)
+     /*   if (audience.getBag().hasInviation()) { //가방안에 초대장이 들어있는지 확인(초대장이 있다)
             Ticket ticket = ticketSeller.getTicketOffice().getTicket(); //판매원에게 받은 티켓
             audience.getBag().setTicket(ticket); //받은 티켓을 관람객의 가방에 넣어준다
 
@@ -20,7 +20,7 @@ public class Theater {
             audience.getBag().minusAmount(ticket.getFee()); //관람객 가방에서 티켓금액 차감
             ticketSeller.getTicketOffice().plusAmount(ticket.getFee()); //매표소 금액 증가
             audience.getBag().setTicket(ticket); //구매한 티켓을 관람객의 가방에 넣어준다
-
-        }
+        }*/
+        ticketSeller.sellTo(audience);
     }
 }
