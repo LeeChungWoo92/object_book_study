@@ -1,2 +1,3 @@
+include ':object_exam'
 include ':app'
 rootProject.name = "object_book_study"
