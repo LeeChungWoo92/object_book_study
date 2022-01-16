@@ -16,15 +16,19 @@ public class TicketOffice {
         this.tickets.addAll(Arrays.asList(tickets));
     }
 
-    public Ticket getTicket() {  //티켓 판매
+    private Ticket getTicket() {  //티켓 판매
         return tickets.remove(0); //티켓목록에서 맨 첫 번째 위치에 저장된 티켓 반환
     }
 
-    public void minusAmount(Long amount) { //판매금액 차감
+    private void minusAmount(Long amount) { //판매금액 차감
         this.amount -= amount;
     }
 
-    public void plusAmount(Long amount) { //판매금액 더하기
+    private void plusAmount(Long amount) { //판매금액 더하기
         this.amount += amount;
+    }
+
+    public void sellTicketTo(Audience audience){
+        plusAmount(audience.buy(getTicket()));
     }
 }
