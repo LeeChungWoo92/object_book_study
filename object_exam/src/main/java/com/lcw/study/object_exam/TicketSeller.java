@@ -10,12 +10,12 @@ public class TicketSeller {
         this.ticketOffice = ticketOffice;
     }
 
-    /*public TicketOffice getTicketOffice() {
+    /*public TicketOffice getTicketOffice() { //chapter1_1
         return ticketOffice;
     }*/
 
     public void sellTo(Audience audience){
-        if(audience.getBag().hasInviation()){
+      /*  if(audience.getBag().hasInviation()){
             Ticket ticket = ticketOffice.getTicket();
             audience.getBag().setTicket(ticket);
         }else{
@@ -24,6 +24,7 @@ public class TicketSeller {
             ticketOffice.plusAmount(ticket.getFee());
             audience.getBag().setTicket(ticket);
 
-        }
+        }*/ //chapter1_2
+        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
     }
 }
