@@ -1,4 +1,4 @@
-package com.lcw.study.object_exam;
+package com.lcw.study.object_exam.chapter1;
 
 public class Ticket {
     private Long fee;
