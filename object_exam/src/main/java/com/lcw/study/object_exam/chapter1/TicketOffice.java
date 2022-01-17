@@ -1,4 +1,7 @@
-package com.lcw.study.object_exam;
+package com.lcw.study.object_exam.chapter1;
+
+import com.lcw.study.object_exam.chapter1.Audience;
+import com.lcw.study.object_exam.chapter1.Ticket;
 
 import java.util.ArrayList;
 import java.util.Arrays;
