@@ -1,4 +1,4 @@
-package com.lcw.study.object_exam;
+package com.lcw.study.object_exam.chapter1;
 
 /**
  * 관람객이 소지품을 보관할 Bag
